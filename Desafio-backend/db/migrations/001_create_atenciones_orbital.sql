@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS atenciones_orbital (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  calificacion_cliente TINYINT UNSIGNED NOT NULL,
+  es_urgente BOOLEAN NOT NULL,
+  tipo_cliente ENUM('VIP', 'CORPORATIVO') NOT NULL,
+  prioridad DECIMAL(4,1) NOT NULL,
+  fecha_creacion TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+);

@@ -1,0 +1,87 @@
+.pagina {
+  width: min(100% - 32px, 480px);
+  margin: 0 auto;
+  padding: clamp(48px, 9vh, 88px) 0 48px;
+}
+
+.encabezado { margin-bottom: 28px; }
+
+.marca {
+  color: #5566aa;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.encabezado h1 {
+  margin: 12px 0 8px;
+  font-size: clamp(28px, 5vw, 36px);
+  line-height: 1.2;
+  letter-spacing: -.04em;
+}
+
+.encabezado p { margin: 0; color: #687184; line-height: 1.5; }
+
+.formulario {
+  display: grid;
+  gap: 12px;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #e7eaf0;
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(32, 38, 54, .05);
+}
+
+.formulario > label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.formulario select {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  margin-bottom: 8px;
+  color: #202636;
+  background: #fff;
+  border: 1px solid #d8deea;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.formulario select:hover { border-color: #aab4ca; }
+
+.formulario select:focus-visible,
+.formulario button:focus-visible {
+  outline: 3px solid #b9c6f4;
+  outline-offset: 2px;
+}
+
+.formulario button {
+  min-height: 46px;
+  color: #fff;
+  background: #4058ac;
+  border: 0;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .2s ease;
+}
+
+.formulario button:hover { background: #334895; }
+
+.mensaje {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 1px solid;
+  border-radius: 9px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.exito { color: #176044; background: #f0faf5; border-color: #ccebdd; }
+.error { color: #9b2e36; background: #fff5f5; border-color: #f2d4d6; }
+
+@media (max-width: 480px) {
+  .formulario { padding: 22px; }
+}
